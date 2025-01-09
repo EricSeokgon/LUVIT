@@ -1,4 +1,4 @@
-const arr2 = ["hello", "world", "jpub"];
+// const arr2 = ["hello", "world", "jpub"];
 
 
 // 변경 Update
