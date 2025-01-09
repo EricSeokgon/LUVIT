@@ -10,6 +10,10 @@ const fetchInfo = () =>
         }
     });
 
+console.log("start");
+
 fetchInfo()
     .then((res) => console.log("성공 결과: ", res))
     .catch((err) => console.log("실패 결과: ", err));
+
+console.log("end");
