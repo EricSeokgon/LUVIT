@@ -1,7 +1,14 @@
-function greet(name: string) {
-    console.log("제 이름은 ", name);
-}
+function addFunction(a, b) {
+    return a + b;
+  }
 
 
-greet("jpub");
-greet("chaewon");
+  const add = addFunction;
+
+
+  const minus = function (a, b) {
+    return a - b;
+  };
+
+
+  console.log(add(1, 2), minus(2, 1));
