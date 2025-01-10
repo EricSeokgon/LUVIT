@@ -16,7 +16,7 @@ console.log({
 });
 
 
-function generateProperty(str) {
+function generateProperty(str: string): string {
     return str + "Key";
 }
 
