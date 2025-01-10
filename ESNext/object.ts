@@ -36,3 +36,22 @@ const user = {
 console.log({
     user,
 });
+
+// 생략되기 전
+const oldOb = {
+    name: "jpub",
+    printName: function () {
+        console.log(this.name);
+    },
+};
+oldOb.printName();
+
+
+// 생략된 후
+const newOb = {
+    name: "jpub",
+    printName() {
+        console.log(this.name);
+    },
+};
+newOb.printName();
