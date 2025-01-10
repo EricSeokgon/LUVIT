@@ -24,3 +24,15 @@ function generateProperty(str: string): string {
 console.log({
     [generateProperty("typescript")]: "hello world",
 });
+
+
+const user = {
+    name: "foo",
+    address: "bar",
+};
+
+
+// { user: user }와 같음
+console.log({
+    user,
+});
