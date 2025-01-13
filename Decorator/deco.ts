@@ -1,9 +1,11 @@
-function jpub(constructor: any, context: any) {
-    console.log(new constructor("minseon"));
+function myWrapper(data: string) {
+    return function (constructor: any, context: any) {
+        console.log(data);
+    };
 }
 
 
-@jpub
+@myWrapper("hello")
 class Person {
     name: string;
 
