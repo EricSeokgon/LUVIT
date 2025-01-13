@@ -1,8 +1,14 @@
 import { IUser, user } from "./database";
 import { IRepository } from "./repository";
 
+export interface IRepository {
 
-class UserRepository implements IUserRepository {
+    // Define your interface methods here
+
+};
+
+
+class UserRepository implements IRepository {
     save(name: string): IUser {
         const newId = user.length + 1;
 
