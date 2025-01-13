@@ -1,12 +1,5 @@
 class Student {
-    private name: string;
-    private id: number;
-
-
-    constructor(name: string, id: number) {
-        this.name = name;
-        this.id = id;
-    }
+    constructor(private name: string, private id: number) { }
 
 
     greet(): void {
@@ -16,4 +9,4 @@ class Student {
 
 
 const s: Student = new Student("hyungki", 4567);
-s.name;
+console.log(s);
