@@ -1,14 +1,13 @@
 interface IPerson {
     name: string;
-    greet(): void;
 }
 
 
-class Person implements IPerson {
-    name: string;
+interface IStudent {
+    ID: string;
+}
 
 
-    greet(): void {
-        console.log(`hello ${this.name}`);
-    }
+class Employee implements IPerson, IStudent {
+    constructor(public company: string, public name: string, public ID: string) { }
 }
