@@ -15,6 +15,5 @@ class Person {
 
 
 function hello(originalMethod: any, _context: ClassMethodDecoratorContext) {
-    console.log(originalMethod);
-    console.log(_context);
+    console.log("hello world");
 }
