@@ -1,3 +1,9 @@
+function jpub(constructor: any, context: any) {
+    console.log(new constructor("minseon"));
+}
+
+
+@jpub
 class Person {
     name: string;
 
@@ -5,15 +11,4 @@ class Person {
     constructor(name: string) {
         this.name = name;
     }
-
-
-    @hello
-    greet() {
-        console.log(`hello ${this.name}`);
-    }
-}
-
-
-function hello(originalMethod: any, _context: ClassMethodDecoratorContext) {
-    console.log("hello world");
 }
