@@ -7,3 +7,4 @@ console.log(r.save("khg"));
 console.log(r.findOne(99));
 console.log(r.deleteUser("cys"));
 console.log(r.findAll());
+
